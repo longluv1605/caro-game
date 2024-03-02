@@ -7,8 +7,12 @@ root.title("Tic Tac Toe")
 
 state = [['', '', ''], ['', '', ''], ['', '', '']]
 
-def disable_all_buttons():
-    pass
+def clearGame():
+    global state
+    state = [['', '', ''], ['', '', ''], ['', '', '']]
+    buttons = [button1, button2, button3, button4, button5, button6, button7, button8, button9]
+    for button in buttons:
+        button.config(text='', bg='SystemButtonFace')
 
 def clicked(button):
     if button['text'] != '':
@@ -34,7 +38,7 @@ def check_winner(currState):
         messagebox.showinfo('Tic Tac Toe', 'You lose')
     elif terminated(currState) == 0:
         messagebox.showinfo('Tic Tac Toe', 'Draw')
-    disable_all_buttons()
+    clearGame()
     return 1
    
 def min_val(currState):
