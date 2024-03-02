@@ -143,4 +143,4 @@ def play():
             turn = 'player'
 
 
-# play()
+play()
