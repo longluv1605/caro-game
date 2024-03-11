@@ -1,6 +1,4 @@
 import time
-import tkinter as tk
-from tkinter import messagebox
 
 def next_moves(state, min_bound, max_bound, last_move):
     move = []

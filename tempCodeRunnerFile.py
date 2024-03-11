@@ -1,1 +1,1 @@
-return 1
+move = ai_move(state, min_bound, max_bound, last_move)
