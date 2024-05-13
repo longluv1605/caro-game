@@ -425,7 +425,6 @@ def move(i, j):
     if is_terminated(move[0], move[1]) is not None:
         messagebox.showinfo('Result', 'You win!' if is_terminated(i, j) == 1e9 else 'AI win!' if is_terminated(i, j) == -1e9 else 'Draw!')
 
-
 ########################################################################################
 
 def play():
